@@ -595,7 +595,6 @@ print(f" Inference accuracy: {final_results['inference_accuracy']:.3f}")
 print(f" Network densities: Gene={final_results['gene_network_density']:.3f}, Disease={final_results['disease_network_density']:.3f}, Protein={final_results['protein_network_density']:.3f}")
 
 print("\nBayesian Network Bioinformatics Project Completed!")
-print("This project demonstrates the application of Bayesian Networks to real-world bioinformatics problems.")
 
 # ============================================================================
 # SUBMISSION CHECKLIST
@@ -610,5 +609,4 @@ print("✅ Answer all conceptual questions (Q1, Q2, Q3)")
 print("✅ Implement all required functions")
 print("✅ Calculate all required metrics and properties")
 print("✅ Document your biological insights in comments")
-print("✅ Run the grading script to verify your implementation")
 print("=" * 60) 
