@@ -4,7 +4,6 @@
 
 This assignment will teach you how to implement **Bayesian Networks** for real-world bioinformatics problems. You'll work with three biological datasets to predict diseases, analyze gene networks, and study protein interactions.
 
-**Difficulty Level**: 6/10 (Moderate to Advanced)  
 **Estimated Time**: 8-12 hours  
 **Points**: 130 total (100 core + 15 conceptual + 15 bonus)
 
@@ -24,7 +23,7 @@ By completing this assignment, you will:
 ├── 📄 src/bayesian_network_project.py    ← MAIN FILE (you complete this)
 ├── 📄 grade_script.py                    ← Grading script
 ├── 📄 requirements.txt                   ← Python packages needed
-├── 📄 README.md                         ← This file
+├── 📄 README.md                         
 │
 📁 data/ (Biological Datasets):
 ├── 📄 gene_expression.csv               ← 1200 patients, 50 genes
@@ -56,21 +55,18 @@ Each dataset teaches different aspects of Bayesian Networks and reasoning in bio
 - **50 gene expression levels** per patient (continuous values)
 - **Goal**: Predict cancer from gene expression patterns
 - **Bayesian Network Type**: Primary disease prediction network
-- **Teaches**: Continuous data analysis, high-dimensional features, correlation-based structure learning
 
 #### 🩸 **Dataset 2: Disease Markers (Diabetes Prediction)**
 - **800 people** (400 healthy, 400 with diabetes)
 - **15 genetic markers (SNPs)** + clinical variables (age, BMI, etc.)
 - **Goal**: Predict diabetes risk from genetic markers
 - **Bayesian Network Type**: Secondary risk assessment network
-- **Teaches**: Categorical data analysis, genetic interactions, conditional probability calculations
 
 #### 🧪 **Dataset 3: Protein Interactions**
 - **300 proteins** involved in cell signaling pathways
 - **Interaction scores** between proteins (network data)
 - **Goal**: Analyze protein network structure and identify hubs
 - **Bayesian Network Type**: Network analysis and graph theory
-- **Teaches**: Network structure analysis, graph properties, biological relationship modeling
 
 **All three datasets are used in the main script** (`src/bayesian_network_project.py`) for different types of Bayesian reasoning!
 
@@ -136,7 +132,7 @@ Complete advanced network analysis:
 - Hub protein identification
 
 ## 📊 **Total Points Summary**
-- **Core Requirements**: 100 points (Steps 1-7)
+- **Core Requirements**: 100 points (Steps 1-8)
 - **Conceptual Questions**: 15 points (3 questions × 5 pts each)
 - **Bonus Analysis**: 15 points (Advanced network analysis)
 - **TOTAL**: 130 points
@@ -174,45 +170,6 @@ Plots are saved with descriptive filenames:
 - D: 60-69 points
 - F: <60 points
 
-## 📊 Grading Your Work
-
-### Run the Grading Script
-```bash
-python grade_script.py
-```
-
-This will automatically test your implementation and give you a score.
-
-### What the Grading Checks:
-- ✅ Data loading and preprocessing
-- ✅ Bayesian network structure learning
-- ✅ Probability calculations
-- ✅ Disease prediction accuracy
-- ✅ Network analysis results
-- ✅ Code quality and documentation
-
-## 🎯 Expected Results
-
-When you run your completed assignment, you should see:
-
-```
-📊 Assignment Results:
-├── Gene Expression Analysis:
-│   ├── Network Structure: 50 genes connected
-│   ├── Prediction Accuracy: ~85-90%
-│   └── Important Genes: [list of hub genes]
-│
-├── Disease Marker Analysis:
-│   ├── SNP Network: 15 markers connected
-│   ├── Diabetes Prediction: ~80-85%
-│   └── Risk Factors: [top genetic markers]
-│
-└── Protein Network Analysis:
-    ├── Network Size: 300 proteins
-    ├── Communities: [number of protein groups]
-    └── Hub Proteins: [most connected proteins]
-```
-
 ## 💡 Tips for Success
 
 ### 🔍 Understanding the Code
@@ -247,45 +204,11 @@ When you run your completed assignment, you should see:
 
 Before submitting your assignment, make sure you have:
 
-- ✅ Completed all 7 core steps in `bayesian_network_project.py`
+- ✅ Completed all 8 core steps in `bayesian_network_project.py`
 - ✅ Answered all 3 conceptual questions in code comments
-- ✅ Implemented bonus advanced analysis functions
-- ✅ Tested your code with the grading script
+- ✅ Implemented bonus advanced analysis functions for extra points
 - ✅ Documented your biological insights and interpretations
 - ✅ Used meaningful variable names and clear comments
 
-## 🎓 Learning Outcomes
-
-By completing this assignment, you will gain:
-- **Technical Skills**: Bayesian network implementation, network analysis
-- **Domain Knowledge**: Bioinformatics applications and biological data
-- **Critical Thinking**: Interpreting complex network structures
-- **Research Skills**: Working with real-world biological datasets
-
----
 
 **Good luck with your Bayesian Networks assignment!** 🧬✨
-
-## 🎉 Project Benefits
-
-### For Students
-- Hands-on experience with advanced AI concepts
-- Real-world bioinformatics applications
-- Portfolio-worthy project
-- Industry-relevant skills
-
-### For Instructors
-- Comprehensive assessment tool
-- Real-world dataset integration
-- Automated grading capability
-- Scalable for different class sizes
-
-## 🔬 Scientific Rigor
-
-The project maintains scientific accuracy by:
-- Using realistic biological data structures
-- Implementing proper statistical methods
-- Providing meaningful biological interpretations
-- Following bioinformatics best practices
-
-This project successfully bridges the gap between theoretical machine learning concepts and practical bioinformatics applications, providing students with valuable skills for both academic and industry careers. 
