@@ -1,4 +1,4 @@
-# Hidden Markov Model (HMM) Programming Assignment 🌦️
+# 🌦 Hidden Markov Model (HMM) - Programming Assignment ️
 
 ## Overview 📋
 This assignment implements a Hidden Markov Model to analyze and predict weather patterns using real weather data from Grand Forks, ND. Students will learn to implement core HMM algorithms and apply them to a practical weather prediction problem.
