@@ -1,11 +1,11 @@
 # 🧩 A\* Search: Black–White Sliding Puzzle
 
-**Programming Project Assignment: CSCI 384 AI**
+**Programming Assignment: CSCI 384 AI**
 
 Implement **A\*** search to solve a 1‑D sliding puzzle with **Black (B)** tiles, **White (W)** tiles, and one **Blank (\_)**.
 You will complete a single Python script with clearly marked `# TODO` sections and produce the required outputs for two **admissible & consistent** heuristics.
 
-This is a structured, step‑by‑step project: define the problem, implement the successor function and costs, write two heuristics, and run **A\***—reporting the optimal path and metrics for each heuristic.
+This is a structured, step‑by‑step programming assignment: define the problem, implement the successor function and costs, write two heuristics, and run **A\***—reporting the optimal path and metrics for each heuristic.
 
 ---
 
