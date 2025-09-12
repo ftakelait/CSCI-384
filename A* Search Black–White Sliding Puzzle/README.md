@@ -113,7 +113,6 @@ You should see the h1 section, h2 section, and the comparison printed to the ter
 
   * Run without errors
   * Produce the **exact** output sections and labels shown above
-  * Implement the required functions listed in **What You Implement**
 
 Follow any naming or portal instructions from your instructor.
 
