@@ -2,20 +2,19 @@
 
 **Programming Project Assignment: CSCI 384 AI**
 
-Implement **A\*** search to solve a 1-D sliding puzzle with **Black (B)** tiles, **White (W)** tiles, and one **Blank (\_)**.
+Implement **A\*** search to solve a 1‑D sliding puzzle with **Black (B)** tiles, **White (W)** tiles, and one **Blank (\_)**.
 You will complete a single Python script with clearly marked `# TODO` sections and produce the required outputs for two **admissible & consistent** heuristics.
 
-This is a structured, step-by-step project: define the problem, implement the successor function and costs, write two heuristics, and run **A\***—reporting the optimal path and metrics for each heuristic.
+This is a structured, step‑by‑step project: define the problem, implement the successor function and costs, write two heuristics, and run **A\***—reporting the optimal path and metrics for each heuristic.
 
 ---
 
 ## 📚 What You’ll Practice
 
 * Formal problem modeling (state, goal, actions, path costs)
-* Implementing **A\*** (best-first) with `f(n) = g(n) + h(n)`
+* Implementing **A\*** (best‑first) with `f(n) = g(n) + h(n)`
 * Designing and validating **admissible & consistent** heuristics
 * Measuring search performance (expanded nodes, frontier size, total pushes)
-* (Optional) Implementing **Iterative Deepening Search (IDS)**
 
 ---
 
@@ -25,16 +24,16 @@ This is a structured, step-by-step project: define the problem, implement the su
 | -------------- | --------------------------------------------------- |
 | `hw1_astar.py` | **Starter** with `# TODO` sections (the only file). |
 
-> Only `hw1_astar.py` is provided to and submitted by students.
+> Only `hw1_astar.py` is provided to and submitted by you.
 
 ---
 
 ## 🧠 Puzzle Overview
 
-* **Board:** a 1-D row of **10** positions
-* **Tiles:** **5 `'B'`**, **4 `'W'`**, **1 `'_'`** (blank)
+* **Board:** a 1‑D row of **9** positions
+* **Tiles:** **4 `'B'`**, **4 `'W'`**, **1 `'_'`** (blank)
 * **Initial state (fixed in code):**
-  `('W','W','W','W','_','B','B','B','B','B')`
+  `('W','W','W','W','_','B','B','B','B')`
 
 ### Legal Moves & Costs
 
@@ -53,10 +52,10 @@ The **blank position is irrelevant**.
 
 * `is_goal(state)` — goal test
 * `successors(state)` — legal next states + step costs
-* `action_cost(state, next_state)` — distance-based cost
+* `action_cost(state, next_state)` — distance‑based cost
 * `heuristic_h1(state)` — boundary misplacements (admissible & consistent)
 * `heuristic_h2(state)` — W–B inversion count (admissible & consistent)
-* `astar(start_state, heuristic)` — A\* search core
+* `astar(start_state, heuristic)` — A\* search core (provided implementation; you’ll call it)
 
 > Complete **only** the blocks marked with `# TODO`. Do **not** rename functions, constants, or print labels.
 
@@ -69,7 +68,7 @@ Your program must print **two sections** (h1 then h2) and a comparison:
 ```
 === A* with h1 ===
 Optimal solution (sequence of states):
-('W','W','W','W','_','B','B','B','B','B')
+('W','W','W','W','_','B','B','B','B')
 ...
 Optimal cost (f(goal)): <number>
 Expanded nodes: <number>
@@ -120,27 +119,18 @@ Follow any naming or portal instructions from your instructor.
 
 ---
 
-## 🏗️ Grading Breakdown (200 pts)
+## 🏗️ Grading Breakdown (150 pts)
 
-**1) Problem Formulation (30 pts)**
+**All points are attached to the TODOs inside `hw1_astar.py`.**
+Breakdown (sums to 150):
 
-* State representation (5)
-* Initial state (5)
-* Goal test (5)
-* Successors (10)
-* Action/path cost (5)
+* `is_goal` — **15 pts**
+* `successors` — **45 pts**
+* `action_cost` — **10 pts**
+* `heuristic_h1` — **40 pts**
+* `heuristic_h2` — **40 pts**
 
-**2) A\* with Heuristics (170 pts)**
-
-* h1 properties (admissible/consistent) (10)
-* A\* optimality across h1 & h2 (100)
-* Required printed outputs for **h1** (25)
-* h2 properties + outputs (25)
-* Comparison (h1 vs h2) (10)
-
-**3) Optional IDS (+50 pts)**
-
-* If you implement IDS, you may print its results in the commented section.
+> A\* driver and print formatting are provided and graded for correct behavior when your TODOs are completed.
 
 ---
 
@@ -148,13 +138,12 @@ Follow any naming or portal instructions from your instructor.
 
 * Both heuristics must return **integers ≥ 0** and **0 at goal**.
 * Check the **path cost** by summing step distances along your printed path.
-* Ensure A\* performs the **goal test on pop** from the frontier (tree-search style).
+* Ensure A\* performs the **goal test on pop** from the frontier (tree‑search style) — already handled in the provided `astar`.
 * Keep function names and print labels unchanged.
+* Avoid printing inside core functions except where the driver prints results.
 
 ---
 
 ## 🔒 Academic Integrity
 
-Write your own implementation. Discuss high-level ideas only; code must be original. Cite any references used.
-
----
+Write your own implementation. Discuss high‑level ideas only; code must be original. Cite any references used.
