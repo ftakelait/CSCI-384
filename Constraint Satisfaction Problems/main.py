@@ -47,9 +47,11 @@ def run_basic_examples():
         
         sample_problems = load_sample_csp_problems()
         for name, problem in sample_problems.items():
+            variables, domains, constraints = problem
             print(f"\n{name}:")
-            print(f"  Variables: {problem['variables']}")
-            print(f"  Description: {problem['description']}")
+            print(f"  Variables: {variables}")
+            print(f"  Number of variables: {len(variables)}")
+            print(f"  Number of constraints: {len(constraints)}")
         
         # Example 3: Arc consistency
         print("\n📋 Example 3: Arc Consistency")
