@@ -60,8 +60,9 @@ def visualize_constraint_graph(variables, domains, constraints, title="Constrain
     
     # Add legend
     legend_elements = [
-        plt.scatter([], [], s=700, c='lightblue', alpha=0.8, label='Variable (Domain Size)'),
-        plt.plot([], [], color='gray', alpha=0.6, label='Constraint')
+        plt.Line2D([0], [0], marker='o', color='w', markerfacecolor='lightblue', 
+                   markersize=10, alpha=0.8, label='Variable (Domain Size)'),
+        plt.Line2D([0], [0], color='gray', alpha=0.6, label='Constraint')
     ]
     ax.legend(handles=legend_elements, loc='upper right')
     

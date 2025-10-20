@@ -101,10 +101,8 @@ def analyze_sample_problems(sample_problems):
     for problem_name, problem_data in sample_problems.items():
         print(f"\nAnalyzing {problem_name}:")
         
-        # Extract problem components
-        variables = problem_data['variables']
-        domains = problem_data['domains']
-        constraints = problem_data['constraints']
+        # Extract problem components (problem_data is a tuple: variables, domains, constraints)
+        variables, domains, constraints = problem_data
         
         # TODO: Convert domains to proper format (list of lists)
         # Hint: Convert string keys to integers and string values to lists
