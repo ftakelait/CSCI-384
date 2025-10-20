@@ -133,7 +133,6 @@ def main():
     
     print("\nNext steps:")
     print("1. Complete the assignment in src/constraint_satisfaction_project.py")
-    print("2. Run the grading script: python grade_script.py")
 
 if __name__ == "__main__":
     main()

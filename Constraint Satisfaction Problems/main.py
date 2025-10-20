@@ -69,7 +69,6 @@ def run_basic_examples():
         print("\nNext steps:")
         print("1. Complete the full assignment in src/constraint_satisfaction_project.py")
         print("2. Run: python src/constraint_satisfaction_project.py")
-        print("3. Run grading: python grade_script.py")
         
     except ImportError as e:
         print(f"❌ Import error: {e}")

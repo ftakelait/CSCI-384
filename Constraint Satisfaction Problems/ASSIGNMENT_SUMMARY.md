@@ -165,5 +165,3 @@ The assignment is designed with a logical progression:
 ---
 
 **The assignment is complete, tested, and ready for students!** 🎉
-
-All files are properly structured, documented, and error-free. Students can begin immediately after installing the required dependencies.
