@@ -94,7 +94,8 @@ def test_sample_problems():
         print(f"✅ Loaded {len(problems)} sample problems")
         
         for name, problem in problems.items():
-            print(f"  - {name}: {len(problem['variables'])} variables")
+            variables, domains, constraints = problem
+            print(f"  - {name}: {len(variables)} variables")
         
         return True
     except Exception as e:
