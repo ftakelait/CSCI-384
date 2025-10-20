@@ -122,9 +122,6 @@ python main.py
 
 # Complete the assignment
 python src/constraint_satisfaction_project.py
-
-# Run grading
-python grade_script.py
 ```
 
 ## ✅ Quality Assurance
