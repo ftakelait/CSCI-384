@@ -252,21 +252,11 @@ Before submitting your assignment, make sure you have:
 - ✅ Used meaningful variable names and clear comments
 - ✅ Generated performance reports and visualizations
 
-## 🎯 **Grading Scale**
-- A: 135+ points (90%+)
-- B: 120-134 points (80-89%)
-- C: 105-119 points (70-79%)
-- D: 90-104 points (60-69%)
-- F: <90 points (<60%)
-
 ## 🚀 **Running the Assignment**
 
 ```bash
 # Run the main assignment
 python src/constraint_satisfaction_project.py
-
-# Run the grading script
-python grade_script.py
 ```
 
 ## 📚 **References**
