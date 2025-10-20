@@ -1,0 +1,9 @@
+problem_type,n,p,alpha,r,description
+n_queens_4,4,0.5,1.0,0.6,4-Queens problem with moderate constraint tightness
+n_queens_8,8,0.4,1.0,0.5,8-Queens problem with moderate constraint tightness
+map_coloring,7,0.33,1.0,0.4,Map coloring with 3 colors
+scheduling,5,0.4,1.0,0.5,Job scheduling with resource conflicts
+random_easy,6,0.2,0.8,0.3,Easy random CSP
+random_medium,8,0.4,0.9,0.4,Medium random CSP
+random_hard,10,0.6,1.0,0.5,Hard random CSP
+sudoku,81,0.11,1.0,0.02,Sudoku 9x9 grid
